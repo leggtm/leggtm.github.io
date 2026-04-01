@@ -15,11 +15,11 @@
 /* general formatting */
 
 body {
-    padding-left: 20px;
+    
     width: 100%;
     min-height: 100dvh;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-x: hidden; 
 }
 
 /* temp commented out for push purposes
@@ -52,7 +52,7 @@ body.canScroll {
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
-    position: relative;
+    position: absolute;
 }
 
 .innerCard.isFlipped {
