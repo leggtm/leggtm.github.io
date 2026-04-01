@@ -1,4 +1,4 @@
-# cafcaesque
+# cafcaesque °❀⋆.ೃ࿔*:･
 ## my name is chiara and this is cafcaesque.com
 
 This project is a long time coming. I orignally had a website also called cafcaesque.com and it was created using Carrd, which is a website builder. It did its job but it didn't look the way I wanted to. I was in high school at the time and hadn't taken any formal coding courses. I was interested in the idea of building a website using HTML, but I wasn't ready to dedicate time to it.
@@ -9,6 +9,4 @@ After a couple months in the course, after feeling like I had down the basics, I
 
 I hope you enjoy browsing it, and I hope you decide to return to it from time to time as it updates. My taste is always changing so I know that with the skillset I'm slowly building, it will be completely different a year from now!
 
-Thank you for checking cafcaesque out!!
-
-- Chiara Adjoh-Davoh
+Thank you for checking cafcaesque out!! ★
