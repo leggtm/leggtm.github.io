@@ -2,6 +2,12 @@
     changes. i plan to update how this site looks from time to time
     as my taste change and the standards evolve. */
 
+    /* to do list:
+        - create a hamburger navabar for mobile and smaller screens
+        OR create a scrollwheel
+        
+    */
+
 :root {
 
     /* my colors */
@@ -67,6 +73,14 @@ body.canScroll {
     visibility: hidden;
 }
 
+.navbar_inner {
+    width: 55dvw;
+    display: flex;
+    flex-direction: row;
+
+    /*background-color: blue;*/
+}
+
 .navbar.beenFlipped {
     visibility: visible;
 }
@@ -76,20 +90,26 @@ body.canScroll {
     justify-content: flex-end;
     align-items: center;
     margin: 10px 0 5px;
-    width: 40%;
+    width: 20%;
+
+    font-size: 16px;
+
+    /*background-color: blue;*/
 }
+
 
 .navbar_sections {
     display: flex;
     flex-direction: row;
+
+    padding: 2px 0 0 2dvw;
     
-    justify-content: flex-start; 
-    gap: 15px;
-    align-items: center;
-    text-align: center;
-    place-items: center;
+    justify-content: space-between;
     list-style-type: none;
-    width: 60%;
+    width: 80%;
+    overflow-wrap: break-word;
+
+    /*background-color: red;*/
 }
 
 .navbar_sections li a {
