@@ -6,13 +6,17 @@
 
     /* my colors */
 
-    --primary: #FFF;
-    --secondary: #FFF;
-    --tertiary: #FFF;
+    --primary: #DB5F47;
+    --secondary: #999F5C;
+    --tertiary: #A2B5C1;
     --orioles-orange: #DB5F47;
 }
 
 /* general formatting */
+
+html {
+    scroll-padding-top: 20px;
+}
 
 body {
     
@@ -20,6 +24,7 @@ body {
     min-height: 100dvh;
     overflow-y: auto;
     overflow-x: hidden; 
+    
 }
 
 /* temp commented out for push purposes
@@ -35,29 +40,97 @@ body.canScroll {
     font-style: normal;
 }
 
+.gaegu-font {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* navbar formatting */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 0px auto 0;
+    overflow: hidden;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    visibility: hidden;
+}
+
+.navbar.beenFlipped {
+    visibility: visible;
+}
+
+.navbar h3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0 5px;
+    width: 40%;
+}
+
+.navbar_sections {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-start; 
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+    list-style-type: none;
+    width: 60%;
+}
+
+.navbar_sections li a {
+    color:var(--primary);
+    text-decoration: none;
+}
+
+.navbar_sections li a:hover {
+    text-decoration: underline;
+}
+
 /* opening postcard specific formatting 
-( can be reused for other cards in the future?) */
+( can be reused for other cards in the future? ) */
 
 .card {
+    position: relative;
     margin: 100px auto 0;
     width: 60dvw;
     aspect-ratio: 1644/1030;
     perspective: 600px;
     rotate: 3deg;
+    z-index: 2;
 }
 
 .innerCard {
     width: 100%;
     height: 100%;
-    transition: transform 1s;
+    transition: transform 1s ease;
     transform-style: preserve-3d;
     cursor: pointer;
-    position: absolute;
+}
+
+.innerCard:hover{
+    transform: rotateY(-3deg);
 }
 
 .innerCard.isFlipped {
     transform: rotateY(180deg);
+    pointer-events: none;
 }
+
 
 .cardFace {
     position: absolute;
@@ -92,17 +165,41 @@ body.canScroll {
 }
 
 .cardHeader {
-    
+    /* to be filled later */
 }
 
 .cardBody {
-
+    /* to be filled later */
 }
 
 
 #postcard_img {
     height: 95%;
     aspect-ratio: 1644/1030;
+}
+
+/* main sections of the page */
+
+.page_contents {
+    display: none;
+}
+
+.page_contents.beenFlipped {
+    display: revert;
+}
+
+.section {
+    width: (100dvw - 1px);
+    margin: 0px;
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutme {
+    margin-top: 200px;
+    background-color: var(--primary);
 }
 
 /* styling info for the footer */
