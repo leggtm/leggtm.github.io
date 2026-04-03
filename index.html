@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta property="og:title" content="cafcaesque.com" />
-        <meta property="og:description" content="created by chiara adjoh-davoh" />
+        <meta property="og:description" content="created by chiara adjoh-davoh" /> <!-- can change the preview image at a later time -->
         <meta property="og:image" content="images/postcard.jpg" />
         <link rel="stylesheet" href="css/reset.css"> <!-- reset css -->
         <link rel="stylesheet" href="css/style.css">
@@ -40,7 +40,7 @@
                     <li><a href="#aboutme">about me</a></li>
                     <li><a href="#programming">programming</a></li>
                     <li><a href="#film">film</a></li>
-                    <li><a href="#writing">writing</a></li>
+                    <!-- <li><a href="#writing">writing</a></li> the writing section has been removed for now, may come back to it when i have more writing to show -->
                     <li><a href="#other_proj">other projects</a></li>
                 </ul>
             </div>
@@ -71,20 +71,89 @@
 
             <!-- about me section  -->
             <div class="section" id="aboutme">
-                <p>this is an about me section </p>
+                <h3>about me</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consequatur ipsa quam itaque debitis suscipit, laborum repudiandae fuga voluptate nesciunt a doloribus aliquid natus quibusdam, dicta voluptatibus facilis similique magnam!
+                    my name is chiara adjoh-davoh and i am currently a sophomore at howard university, majoring in computer science and minoring in film & television. i'm from baltimore, maryland and currently live in washington, dc. my hobbies aside from coding and film include painting, knitting, sewing, film photography, and collaging. 
+                </p>
+                <p>
+                    feel free to contact me at <b>cdavoh2247@gmail.com</b> for any inquires.
                 </p>
             </div>
 
+        
             <!-- promramming section -->
             <div class="section" id="programming">
-                <p>this is programming section </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consequatur ipsa quam itaque debitis suscipit, laborum repudiandae fuga voluptate nesciunt a doloribus aliquid natus quibusdam, dicta voluptatibus facilis similique magnam!
-                </p>
+                <h3>programming projects</h3>
+                <div class="projects_container">
+                    <div class="project programming">
+                        <h4>cafcaesque.com</h4>
+                        <p>
+                            <b>languages:</b> html, css, javascript
+                        </p>
+                        <p>
+                            this project fufills a long time goal of mine, which is to get comfortable enough with frontend development to create my own portfolio site. in the past, i've used sites like carrd, google sites and wix to create portfolios, but those builders have a lot of limits on what your finished site can look like. i really wanted the flexibility to make my site as creative as i wanted it to be, so i enrolled in a web developement course at howard. after learning enough about front end development to where i felt comfortable, i started programming this site, which is coded 100% by hand and hosted using github pages. if you'd like to check out my source code, <a href="https://github.com/leggtm/leggtm.github.io" target="_blank" rel="noopener noreferrer">here is my github repo</a>. 
+                        </p>
+                    </div>
+                    <div class="project programming">
+                        <h4>policypulse</h4>
+                        <p>
+                            <b>languages:</b> python, javascript <br>
+                            <b>awards:</b> bisonhacks 2025 climate challenege winner, third place overall
+                        </p>
+                        <p>
+                            created as part of 2025's bisonhacks competition, a 24-hour hackathon hosted by howard university, policypulse seeks to offset the climate impact of generative artifical intelligence, using machine learning. policy pulse uses locally trained ai to predict the climate impact of policies and bills, using older policies as a blueprint. its intended use is for lawmakers, lobbyists, and anyone who has a hand in dictating government policy. if you'd like to learn more, check out <a href="https://devpost.com/software/policypulse-bisonhacks-2025" target="_blank" rel="noopener noreferrer">our devpost</a>.
+                        </p>
+                    </div>
+                    <div class="project programming">
+                        <h4>mips: fibonacci sequence</h4>
+                        <p>
+                            <b>language:</b> MIPS assembly
+                        </p>
+                        <p>
+                            while i've spent most of my time coding using high-level languages like c++, python, and javascript, part of my computer organization 1 course was learning how to use an assembly language, like mips, to code. assembly languages are low-level languages that use little to no abstraction. in assembly, every line of code is a very specific instruction for what the computer should be doing in the memory. a single line of code is a single instruction, unlike high-level languages where a single line of code can be many instructions to the computer's memory. it was an incredibly interesting experience and i'm incredibly proud of my short, but challenging project, which prints the fibonacci sequence. you can check it out in <a href="https://github.com/leggtm/comp_org1" target="_blank" rel="noopener noreferrer">my github repo</a>. i highly suggest you look at the .s file!
+                        </p>
+                    </div>
+                    <div class="project programming">
+                        <h4>global housing crisis investigation</h4>
+                        <p>
+                            <b>language:</b> python (pandas & numpy)
+                        </p>
+                        <p>
+                            as part of my intro to data analysis class, i was tasked with investigating a social issue and using python to represent the data visually. i choose the global housing crisis, and through a myriad of data analysis techniques, came to several conclusions about the effect of covid-19 on housing availability and price uptakes. this project was something that i hold very near and dear to my heart. both the paper and all of the jupyter notebook files are in <a href="https://github.com/leggtm/Intro_Ds_Spring_2025" target="_blank" rel="noopener noreferrer">my github repo</a>. 
+                        </p>
+                    </div>
+                    <div class="project programming">
+                        <h4>cipher decoder</h4>
+                        <p>
+                            <b>languages: </b>python, bash, vi editor
+                        </p>
+                        <p>
+                            this project was part of my linux lab course, in which we learned about bash commands and the vi editor. while <a href="https://github.com/leggtm/Linux-Lab-S25/tree/main" target="_blank" rel="noopener noreferrer">this project's file</a> is simply a python file, the file itself was coded using bash's vi editor in my computer's terminal, rather than through an IDE like vscode. while the code itself is only a few lines, it was a fun and streneous process using the vi editor to write it. in the process, i learned a ton about how bash and the command line work. 
+                        </p>
+                    </div>
+                    <div class="project programming">
+                        <h4>extraneous c++ projects</h4>
+                        <p>
+                            <b>language:</b> c++
+                        </p>
+                        <p>
+                            even though most of my larger projects have used other languages, c++ has been my main language of choice for several years now. i've compiled a few of the projects i've completed in <a href="https://github.com/leggtm/extraneous-c-projects" target="_blank" rel="noopener noreferrer">this github repo</a>. i've gotten very familiar with recursion, object oriented programming, and linked lists, with many more topics to learn as i continue working my way through my c++ courses. 
+                        </p>
+                    </div>
+                    <!-- project template start, remember to remove style -->
+                    <div style="display: none;" class="project programming">
+                        <h4>NAME</h4>
+                        <p>
+                            <b>language: </b>
+                        </p>
+                        <p>
+                            DESC 
+                            <a href="LINK" target="_blank" rel="noopener noreferrer"></a>
+                        </p>
+                    </div>
+                    <!-- project template end -->
+                </div>
             </div>
-            
             <!-- film section -->
             <div class="section" id="film">
                 <p>this is film section </p>
@@ -93,13 +162,14 @@
                 </p>
             </div>
 
-            <!-- writing section -->
+            <!--  writing section (removed for now)
             <div class="section" id="writing">
                 <p>this is writing section </p>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consequatur ipsa quam itaque debitis suscipit, laborum repudiandae fuga voluptate nesciunt a doloribus aliquid natus quibusdam, dicta voluptatibus facilis similique magnam!
                 </p>
             </div>
+            --> 
             
             <!-- other projects section -->
             <div class="section" id="other_proj">
